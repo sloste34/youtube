@@ -3,7 +3,10 @@ import React from 'react';
 function SearchHeader() {
   return (
     <header>
-      <h1>Search Header</h1>;
+      {/* logo part */}
+      <div>Logo</div>
+      {/* search form part */}
+      <form></form>
     </header>
   );
 }
