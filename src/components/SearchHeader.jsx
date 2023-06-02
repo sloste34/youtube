@@ -1,10 +1,13 @@
 import React from 'react';
+import { BsYoutube } from 'react-icons/bs';
 
 function SearchHeader() {
   return (
     <header>
       {/* logo part */}
-      <div>Logo</div>
+      <div>
+        <BsYoutube />
+      </div>
       {/* search form part */}
       <form></form>
     </header>
