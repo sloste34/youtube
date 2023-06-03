@@ -12,7 +12,12 @@ function SearchHeader() {
       </div>
       {/* search form part */}
       <form>
-        <input type='text' placeholder='Search...' value={text} />
+        <input
+          type='text'
+          placeholder='Search...'
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+        />
       </form>
     </header>
   );
