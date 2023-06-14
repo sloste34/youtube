@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsYoutube } from 'react-icons/bs';
 import { BiSearchAlt2 } from 'react-icons/bi';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useParams } from 'react-router-dom';
 
 function SearchHeader() {
+  const keyword = useParams().keyword;
   const [text, setText] = useState('');
   const navigate = useNavigate();
+  useEffect(() => setText(keyword ? keyword : ''), [keyword]);
 
   //유튜브 로고를 누르면 메인 페이지로 가는 방법 중 하나
   // const goToMainPage = (e) => {
